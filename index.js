@@ -4,7 +4,7 @@ async function init()
 {
     let host = '46.100.13.10';
     console.log('Pinging ' + host);
-    let res = await ping.promise.probe(host,{timeout: 10});
+    let res = await ping.promise.probe(host,{timeout: 10,extra: ['-i', '2'],});
     var {alive} = res;
 
     if(alive)

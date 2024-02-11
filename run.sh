@@ -13,4 +13,7 @@ sudo systemctl daemon-reload
 sudo systemctl start pinger
 sudo systemctl enable pinger
 
-#curl -fsSL https://raw.githubusercontent.com/KN-VPN/pinger/run.sh -o run.sh && chmod +x run.sh && ./run.sh
+
+#systemctl status pinger.service
+#journalctl -u pinger.service
+#curl -fsSL https://raw.githubusercontent.com/KN-VPN/pinger/main/run.sh -o run.sh && chmod +x run.sh && ./run.sh

@@ -5,13 +5,12 @@ async function createService()
 {
 
     let file_str =
-`
-[Unit]
+`[Unit]
 Description=pinger service
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/node ~/pinger/index.js
+ExecStart=/usr/bin/node /root/pinger/index.js
 Restart=always
 RestartSec=10
 
